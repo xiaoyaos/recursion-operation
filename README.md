@@ -11,8 +11,7 @@
 npm install --save recursion-operation
 ```
 
-### 你只需要在你的nestjs项目根目录下添加一个js文件，内容如下
-usage
+## usage
 ```
 const recursion = require('recursion-operation');
 
@@ -42,7 +41,7 @@ const result = recursion.findByKey(json, "title_sub", "title");
 console.log(JSON.stringify(result, null, 4));
 ```
 
-# Bytenode API
+# API
 ## deleteByKey(obj, keyValue, keyName)
 
 name | type |  Description  
