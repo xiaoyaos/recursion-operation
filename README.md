@@ -63,3 +63,12 @@ obj | object | 需要操作的对象 |
 keyValue | string | 键值 |
 keyName | string | 键名 |
 type | number | 需要返回的数据 0：当前节点 -1 父节点 1 子节点
+
+## addByKey(obj, keyValue, keyName, elem)
+
+name | type |  Description  
+-|-|-
+obj | object | 需要操作的对象 |
+keyValue | string | 键值 |
+keyName | string | 键名 |
+elem | object | 需要增加的对象
