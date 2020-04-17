@@ -5,7 +5,10 @@ const json = [{
   subs: [{
     title: "title_sub",
     subs: [{
-      title: "title_sub_sub"
+      title: "title_sub_sub",
+      subs:[{
+        title: "title_sub_sub_sub"
+      }]
     }]
   }, {
     title: "title_1_sub",
@@ -30,11 +33,11 @@ const json = [{
   }]
 }]
 // 删除
-// const result = recursion.deleteByKey(json, "title_2_sub_sub_sub_sub", "title");
+// const result = recursion.deleteByKey(json, "1_title_sub", "title");
 // console.log(JSON.stringify(json, null, 4));
 // 寻找
-// const result = recursion.findByKey(json, "title_1_sub_sub_sub", "title");
+// const result = recursion.findByKey(json, "title_1_sub", "title");
 // console.log(JSON.stringify(result, null, 4));
 // 增加
-recursion.addByKey(json, "title_2_sub_sub_sub_sub", "title", {title:"haha"});
+recursion.addByKey(json, "", "title", {title:"haha"});
 console.log(JSON.stringify(json, null, 4));
